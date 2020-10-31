@@ -1,5 +1,5 @@
-# Pause-Effect
-![pause_effect.png](pause_effect.png)
+# Ukrainian-Sentiment-Analysis
 
-### pause_effect.py
-Run pause_effect.py and you find the topic of any text only parsing 1/30 or 1/50 of all text.
+The list od Ukrainian words for sentiment analysis and NLP.
+
+![Ukrainian_Sentiment_Analysis.png](Ukrainian_Sentiment_Analysis.png)
