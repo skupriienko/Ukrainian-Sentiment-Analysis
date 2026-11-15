@@ -1,0 +1,74 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ukrainian-sentiment"
+version = "2.0.0"
+description = "Curated, categorized Ukrainian sentiment lexicon and zero-dependency sentiment analyzer."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "CC-BY-SA-4.0"
+license-files = ["LICENSE.txt"]
+authors = [
+  { name = "Serhii Kupriienko" },
+]
+keywords = [
+  "ukrainian",
+  "sentiment-analysis",
+  "lexicon",
+  "nlp",
+  "opinion-mining",
+]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Natural Language :: Ukrainian",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Text Processing :: Linguistic",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/skupriienko/Ukrainian-Sentiment-Analysis"
+Repository = "https://github.com/skupriienko/Ukrainian-Sentiment-Analysis"
+Issues = "https://github.com/skupriienko/Ukrainian-Sentiment-Analysis/issues"
+
+[project.optional-dependencies]
+dev = [
+  "pyright>=1.1",
+  "pytest>=8.0",
+  "ruff>=0.8",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+ukrainian_sentiment = ["data/*.json", "py.typed"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["build_datasets", "ukrainian_sentiment"]
+
+[tool.pyright]
+include = ["src", "scripts", "tests", "example.py"]
+extraPaths = ["src", "scripts"]
+pythonVersion = "3.10"
+typeCheckingMode = "standard"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
