@@ -1,7 +1,8 @@
 # Ukrainian-Sentiment-Analysis
 
 [![CI](https://github.com/skupriienko/Ukrainian-Sentiment-Analysis/actions/workflows/ci.yml/badge.svg)](https://github.com/skupriienko/Ukrainian-Sentiment-Analysis/actions/workflows/ci.yml)
-[![License: CC BY-SA 4.0](https://img.shields.io/badge/License-CC%20BY--SA%204.0-1e293b.svg?style=flat-square)](LICENSE.txt)
+[![Code License: MIT](https://img.shields.io/badge/Code%20License-MIT-1e293b.svg?style=flat-square)](LICENSE-CODE.txt)
+[![Data License: CC BY-SA 4.0](https://img.shields.io/badge/Data%20License-CC%20BY--SA%204.0-1e293b.svg?style=flat-square)](LICENSE-DATA.txt)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10%2B-1e293b.svg?style=flat-square&logo=python&logoColor=white)](pyproject.toml)
 
 ![Ukrainian_Sentiment_Analysis.png](Ukrainian_Sentiment_Analysis.png)
@@ -127,4 +128,7 @@ pytest -v
 
 ## License
 
-Released under the [Creative Commons Attribution-ShareAlike 4.0 International License](LICENSE.txt).
+This repository is licensed separately for code and lexicon data:
+
+- **Code** (`src/ukrainian_sentiment/*.py`, `scripts/`, `tests/`, `example.py`): Released under the [MIT License](LICENSE-CODE.txt).
+- **Data** (`data/`, `sentiment_ua.csv`, `src/ukrainian_sentiment/data/`): Released under the [Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)](LICENSE-DATA.txt).
